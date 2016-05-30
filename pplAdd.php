@@ -8,7 +8,7 @@ $url = $nbURL.$apiURL.'?access_token='.$nbToken;
 $data = array(
 	'person' => array(
 	'email' => $_REQUEST['email'],
-	'email_opt_in' => 'true',
+	'email_opt_in' => $_REQUEST['optin'],
   ),
 );
 $json_data = json_encode($data);
